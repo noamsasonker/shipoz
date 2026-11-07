@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 64" fill="none">
+  <!-- Minimalist Architectural Construction Symbol -->
+  <g transform="translate(4, 8)">
+    <rect x="0" y="32" width="14" height="16" rx="2" fill="#242424" />
+    <rect x="18" y="20" width="14" height="28" rx="2" fill="#242424" />
+    <rect x="36" y="8" width="14" height="40" rx="2" fill="#F1B86E" />
+    <!-- Trowel / precision ruler subtle mark -->
+    <path d="M0 48 L50 48" stroke="#242424" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <!-- Hebrew Typography -->
+  <text x="68" y="32" font-family="'discovery', 'Assistant', 'Heebo', sans-serif" font-size="26" font-weight="800" fill="#242424" letter-spacing="-0.5">ארזים</text>
+  <text x="68" y="49" font-family="'discovery', 'Assistant', 'Heebo', sans-serif" font-size="12" font-weight="500" fill="#757575" letter-spacing="0.5">שיפוצים ועבודות גמר</text>
+</svg>

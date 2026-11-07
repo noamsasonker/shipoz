@@ -1,0 +1,19 @@
+{
+  "name": "erezim-renovation-website",
+  "version": "1.0.0",
+  "description": "אתר יוקרתי לקבלן שיפוצים ועבודות גמר — מבוסס על שפת העיצוב המקורית",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "renovation",
+    "contractor",
+    "israel",
+    "interior-design",
+    "שיפוצים"
+  ],
+  "author": "ארזים שיפוצים",
+  "license": "ISC"
+}
