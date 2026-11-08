@@ -2751,3 +2751,38 @@ a.ct3-item:hover .ct3-go { background: var(--paper); color: var(--ink); border-c
 .ft2 .ft2-credit { background: #0C0B09; border-top: 1px solid var(--line-dark); }
 @media (max-width: 1000px) { .ft2-col:nth-child(n+3) { border-top-color: var(--line-dark); } }
 @media (max-width: 600px) { .ft2-col:nth-child(n+3) { border-top-color: var(--line-dark); } }
+
+/* =========================================================
+   Round 30: shorter hero scroll; triangles never cover headings
+   ========================================================= */
+.js .hero { height: 160vh; }
+
+.services.svc-lux, .ba-x.bx-lux, .ab3-stats.ab4, section.ct6 { --notch-w: clamp(320px, 26vw, 380px); padding-top: calc(var(--notch-w) / 2 + 56px); }
+.svc-notch, .ct6-notch { width: var(--notch-w, 320px); }
+@media (max-width: 900px) {
+  .services.svc-lux, .ba-x.bx-lux, .ab3-stats.ab4, section.ct6 { --notch-w: 220px; padding-top: calc(var(--notch-w) / 2 + 44px); }
+  .svc-notch span, .ct6-notch span { margin-top: 12%; font-size: 14px; }
+}
+@media (prefers-reduced-motion: reduce) { .js .hero { height: 100vh; } }
+
+/* phone: service panel numbers sit beside the title, not on it */
+@media (max-width: 900px) {
+  .svc-lux .panel-num { left: auto; right: 28px; bottom: auto; top: 24px; }
+  .svc-lux .panel:not(.is-active) .panel-num { top: auto; bottom: 30px; }
+  .svc-lux .panel:not(.is-active) .panel-content { padding-right: 70px; }
+}
+/* phone: footer and inline links get a finger-sized hit area */
+@media (max-width: 900px) {
+  .ft2-col ul { gap: 0; }
+  .ft2-col a { display: inline-block; padding-block: 9px; }
+  .ft2-bottom a, .ft2-credit a { display: inline-block; padding-block: 10px; }
+  .ft2-credit .wrap { padding-block: 8px; }
+  .bh-more { padding-block: 10px 6px; }
+}
+/* small laptops: closed service panels are narrow, so their text gets more room */
+@media (min-width: 901px) and (max-width: 1280px) {
+  .svc-lux .panel:not(.is-active) .panel-content { padding-inline: 14px; padding-bottom: 24px; }
+  .svc-lux .panel:not(.is-active) .panel-title { font-size: 14px; line-height: 1.3; overflow-wrap: anywhere; }
+  .svc-lux .panel-num { right: 18px; top: 20px; }
+  .svc-lux .panel-plus { left: 14px; top: 16px; width: 30px; height: 30px; }
+}
