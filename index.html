@@ -1,850 +1,613 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="he" dir="rtl" class="no-js">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ארזים | קבלן שיפוצים ועבודות גמר — איכות, דיוק ושקיפות</title>
-  
-  <!-- SEO & Local Business Meta Tags -->
-  <meta name="description" content="ארזים — קבלן שיפוצים מוביל לעבודות גמר, שיפוץ דירות קומפלט, חדרי רחצה, מטבחים ובתים פרטיים ברמת גימור עילאית, עמידה קפדנית בלוחות זמנים ושקיפות מלאה.">
-  <meta name="keywords" content="קבלן שיפוצים, שיפוץ דירות, שיפוץ דירה קומפלט, שיפוץ חדרי אמבטיה, שיפוץ מטבחים, עבודות גמר, שיפוצים לבית, עבודות ריצוף, עבודות גבס, אינסטלציה">
-  <meta name="author" content="ארזים שיפוצים">
-  
-  <!-- OpenGraph -->
+  <title>ארזים | קבלן שיפוצים ועבודות גמר</title>
+  <meta name="description" content="ארזים, קבלן שיפוצים לדירות, חדרי רחצה ומטבחים במרכז, בשפלה ובירושלים. כתב כמויות מפורט, תאריך מסירה בחוזה ואחריות בכתב.">
+  <meta name="theme-color" content="#14130F">
   <meta property="og:title" content="ארזים | קבלן שיפוצים ועבודות גמר">
-  <meta property="og:description" content="הופכים את הבית שלכם למקום שתמיד חלמתם עליו — שיפוץ דירות, חדרי רחצה ומטבחים בסטנדרט ביצוע בלתי מתפשר.">
+  <meta property="og:description" content="ארזים, קבלן שיפוצים לדירות, חדרי רחצה ומטבחים במרכז, בשפלה ובירושלים. כתב כמויות מפורט, תאריך מסירה בחוזה ואחריות בכתב.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/images/hero-renovation.webp">
-  
-  <!-- Preload fonts -->
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+
+  <script>document.documentElement.classList.replace('no-js','js');</script>
   <link rel="preload" href="assets/fonts/Discovery_Fs-VF.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" as="image" href="assets/images/hero-renovation.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/main-custom.css">
-  <link rel="stylesheet" href="assets/css/cinematic-animations.css">
-  
-  <!-- JSON-LD Structured Data for Local Contractor -->
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..600;1,6..96,400&family=Noto+Sans+Hebrew:wdth,wght@62.5..100,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
-    "name": "ארזים — שיפוצים ועבודות גמר",
+    "name": "ארזים, שיפוצים ועבודות גמר",
     "image": "assets/images/hero-renovation.webp",
-    "description": "קבלן שיפוצים מוביל לשיפוץ דירות קומפלט, חדרי רחצה, מטבחים ועבודות גמר יוקרתיות.",
+    "description": "קבלן שיפוצים לדירות, חדרי רחצה, מטבחים ועבודות גמר.",
     "telephone": "054-8438856",
-    "openingHours": "Mo-Th 08:00-19:00, Fr 08:00-13:00",
-    "priceRange": "₪₪₪"
+    "areaServed": ["מרכז", "שפלה", "ירושלים"],
+    "openingHours": "Su-Th 08:00-19:00, Fr 08:00-13:00"
   }
   </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">דילוג לתוכן</a>
 
-  <!-- Header & Navigation -->
-  <header class="site-header">
-    <div class="header-container">
-      <a href="#hero" class="logo-link" aria-label="ארזים שיפוצים ועבודות גמר דף הבית">
-        <img src="assets/images/logo.svg" alt="ארזים שיפוצים ועבודות גמר" width="220" height="50">
-      </a>
-      
-      <nav aria-label="תפריט ראשי">
-        <ul class="nav-menu">
-          <li><a href="#about" class="nav-link">אודות</a></li>
-          <li><a href="#services" class="nav-link">שירותים</a></li>
-          <li><a href="#hotspot" class="nav-link">סטנדרט גימור</a></li>
-          <li><a href="#gallery" class="nav-link">פרויקטים</a></li>
-          <li><a href="#process" class="nav-link">תהליך העבודה</a></li>
-          <li><a href="#why-us" class="nav-link">למה אנחנו</a></li>
-          <li><a href="#faq" class="nav-link">שאלות נפוצות</a></li>
-                    <li><a href="#contact" class="nav-link">צור קשר</a></li>
+  <!-- Intro: plays on every load, then opens to the sides -->
+  <div class="curtain" aria-hidden="true">
+    <div class="cp cp-r"></div>
+    <div class="cp cp-l"></div>
+    <div class="curtain-logo">
+      <svg class="cl-svg" viewBox="0 0 640 200">
+        <defs>
+          <clipPath id="clText"><text x="320" y="150" text-anchor="middle">ארזים</text></clipPath>
+          <linearGradient id="clSheen" x1="0" x2="1" y1="0" y2="0">
+            <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+            <stop offset=".5" stop-color="#fff" stop-opacity=".95"/>
+            <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <text class="cl-fill" x="320" y="150" text-anchor="middle">ארזים</text>
+        <text class="cl-stroke" x="320" y="150" text-anchor="middle">ארזים</text>
+        <rect class="cl-sheen" x="-260" y="0" width="220" height="200" fill="url(#clSheen)" clip-path="url(#clText)"/>
+      </svg>
+      <span class="cl-sub">שיפוצים ועבודות גמר</span>
+    </div>
+  </div>
+
+  <header class="site-header" data-header>
+    <div class="wrap header-row">
+      <a href="index.html" class="brand" aria-label="ארזים, דף הבית"><span class="logo-word">ארזים</span><span class="logo-rule" aria-hidden="true"></span><span class="logo-sub">שיפוצים<br>ועבודות גמר</span></a>
+
+      <nav class="nav" aria-label="ניווט ראשי">
+        <ul class="nav-list" id="nav-list">
+          <li><a href="index.html" aria-current="page"><span class="nav-num">01</span>דף הבית</a></li>
+          <li><a href="about.html"><span class="nav-num">02</span>אודות</a></li>
+          <li><a href="services.html"><span class="nav-num">03</span>שירותים</a></li>
+          <li><a href="projects.html"><span class="nav-num">04</span>פרויקטים</a></li>
+          <li><a href="contact.html"><span class="nav-num">05</span>צור קשר</a></li>
         </ul>
       </nav>
 
       <div class="header-actions">
-        <a href="#contact" class="header-btn">לקבלת הצעת מחיר ←</a>
-        <button class="mobile-menu-btn" aria-label="פתח תפריט ניווט">&#9776;</button>
+        <a href="tel:0548438856" class="header-phone" dir="ltr">054-8438856</a>
+        <a href="#contact" class="btn btn-pill btn-sm">הצעת מחיר</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-list" aria-label="פתיחת תפריט">
+          <span></span><span></span>
+        </button>
       </div>
     </div>
   </header>
 
-  <main>
-    <!-- Hero Section -->
-    <section class="hero-wrapper" id="hero">
-      <div class="hero-content">
-        <div class="hero-badge badge-reveal">
-          <span>★</span> סטנדרט ביצוע ואיכות ללא פשרות
+  <main id="main">
+    <!-- 1. Hero: full photo that folds into an arch on scroll -->
+    <section class="hero" id="top">
+      <div class="hero-stage">
+        <div class="hero-media">
+          <img src="assets/images/hero-renovation.webp" alt="סלון בדירה לאחר שיפוץ מלא" width="1600" height="1200" fetchpriority="high">
+          <div class="hero-shade" aria-hidden="true"></div>
         </div>
-        <h1 class="hero-title text-reveal-chars">
-          הופכים את הבית שלכם<br>
-          למקום שתמיד<br>
-          חלמתם עליו <span class="hero-dot"></span>
-        </h1>
-        <p class="hero-subtitle">
-          תכנון קפדני, ביצוע מקצועי ברמת הגימור הגבוהה ביותר, ועמידה מלאה בלוחות זמנים ובתקציב. אנו מלווים אתכם יד ביד משלב ההריסה ועד לקבלת המפתח, בשקיפות ובשקט נפשי אמיתי.
-        </p>
-        <div class="hero-buttons">
-          <a href="#contact" class="btn-primary">לקבלת הצעת מחיר לשיפוץ ←</a>
-          <a href="tel:0548438856" class="btn-secondary">לתיאום פגישת ייעוץ ☎</a>
+
+        <div class="flank flank-r">
+          <p class="flank-head"><span class="flank-light">מהריסה</span><span class="flank-bold">ועד מפתח.</span></p>
+          <p class="flank-text">צוות אחד מנהל את כל השיפוץ: הריסה, תשתיות, גמר ומסירה. אתם מקבלים בית מוכן.</p>
         </div>
-        <div class="hero-visual img-reveal-scale">
-          <img src="assets/images/hero-renovation.webp" alt="שיפוץ דירת יוקרה מודרנית — ארזים שיפוצים" loading="eager" width="1320" height="520">
+        <ul class="flank flank-l">
+          <li class="flank-fact"><b class="flank-num" dir="ltr">4–8</b><span>שבועות לשיפוץ<br>דירה קומפלט</span></li>
+          <li class="flank-fact"><b>מחיר סגור</b><span>בחוזה, לפני<br>שמתחילים</span></li>
+          <li class="flank-fact"><b>אחריות</b><span>בכתב על<br>כל העבודה</span></li>
+        </ul>
+
+        <div class="wrap hero-copy">
+          <p class="eyebrow eyebrow-light hero-in" style="--d:0">קבלן שיפוצים · מרכז, שפלה וירושלים</p>
+          <h1 class="hero-title">
+            <span class="line"><span class="text-reveal-chars hero-chars">הבית שלכם,</span></span>
+            <span class="line line-bold"><span class="text-reveal-chars hero-chars">בנוי מחדש.</span></span>
+          </h1>
+          <div class="hero-foot hero-in" style="--d:1">
+            <p class="hero-lede">שיפוץ דירות, חדרי רחצה ומטבחים, עם כתב כמויות סגור, תאריך מסירה בחוזה ואחריות בכתב.</p>
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-pill btn-light">קבלו הצעת מחיר <span class="arrow" aria-hidden="true">←</span></a>
+              <a href="tel:0548438856" class="btn btn-pill btn-ghost-light">התקשרו אלינו</a>
+            </div>
+          </div>
         </div>
+
+        <div class="scroll-cue hero-in" style="--d:2" aria-hidden="true"><span>גללו</span><i></i></div>
       </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about-section" id="about">
-      <div class="about-container">
-        <div class="about-text">
-          <span class="section-badge badge-reveal">נעים להכיר</span>
-          <h2 class="text-reveal-mask">שיפוץ מקצועי שמתחיל באנשים ובשליטה אמיתית בשטח</h2>
-          <p>
-            שיפוץ איכותי לא נמדד רק בתוצאה המרשימה בסיום, אלא בחוויה ובשקט הנפשי שלכם לכל אורך הדרך. כשיוצאים לדרך של שיפוץ בית או דירה, אתם מפקידים בידינו את הנכס היקר ביותר שלכם — ואנו מתייחסים לאחריות הזו במלוא כובד הראש.
-          </p>
-          <p>
-            אנו מאמינים בשילוב שבין דיוק הנדסי בלתי מתפשר לבין יחסי אנוש מעולים. כל שלב בפרויקט — החל מפירוק והריסה מבוקרים, דרך החלפת תשתיות אינסטלציה וחשמל בתקן מחמיר, ועד לריצוף, עבודות גבס, צבע ונגרות — מנוהל ומפוקח יום-יום באתר.
-          </p>
-          <p>
-            הניסיון המעשי העשיר שלנו בענף הבנייה מאפשר לנו לזהות אתגרים מראש, למנוע טעויות יקרות, ולספק לכם מעטפת מלאה של ביטחון, אמינות ותקשורת רציפה ללא הפתעות.
-          </p>
-          <div style="margin-top: 32px;">
-            <a href="#contact" class="btn-primary">לשיחת ייעוץ והיכרות ←</a>
+    <!-- 2. Statement: words light up with the scroll -->
+    <section class="statement st2" id="about">
+      <div class="wrap st2-grid">
+        <div class="st2-copy">
+          <h2 class="h2"><span class="text-reveal-mask">מנהל עבודה אחד,</span><span class="text-reveal-mask"><b>באתר כל יום.</b></span></h2>
+          <p class="st2-lead">אנחנו מנהלים בעצמנו את כל בעלי המקצוע, הריסה, אינסטלציה וחשמל, גבס, איטום, ריצוף וצבע, כך שיש לכם כתובת אחת לכל שאלה.</p>
+          <p class="st2-text">בסוף כל יום עבודה תקבלו עדכון עם תמונות מהשטח, ותדעו בדיוק איפה הפרויקט עומד.</p>
+          <ul class="st2-points">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>מחיר סגור לפני שמתחילים</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>תאריך מסירה כתוב בחוזה</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>אחריות בכתב על העבודה</span></li>
+          </ul>
+          <div class="about-ctas">
+            <a href="#contact" class="btn btn-pill btn-solid">לשיחת היכרות <span class="arrow" aria-hidden="true">←</span></a>
+            <a href="about.html" class="link-arrow">הסיפור שלנו <span aria-hidden="true">←</span></a>
           </div>
         </div>
-        <div class="about-image-wrapper img-reveal-up">
-          <img src="assets/images/about-craftsman.webp" alt="ניהול פרויקט שיפוץ בשטח — ארזים" class="about-image" loading="lazy">
-          <div class="about-badge">
-            <div class="about-badge-title">100%</div>
-            <div class="about-badge-sub">מחויבות לאיכות, שקיפות וזמנים</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-        <!-- Services Section (Chupac "תהליכי עבודה" Architecture Blueprint) -->
-    <section class="services-section otef" id="services">
-      <div class="work-pin-stage">
-        <div class="work-header-wrap">
-          <span class="section-badge badge-reveal">המומחיות שלנו</span>
-          <h2 class="section-title text-reveal-chars">שירותי שיפוצים מקיפים ברמת גמר עילאית</h2>
-          <p class="section-subtitle heading-entrance">
-            מענה מקצועי מלא לכל שלבי השיפוץ תחת קורת גג אחת — עם בעלי מקצוע מובילים, פיקוח קפדני וחומרי גלם מובחרים בלבד.
-          </p>
-        </div>
-
-        <div class="my-container">
-          <!-- Service 01 -->
-          <div class="my-sticky" style="background-image: url('assets/images/service-full-apartment.webp');">
-            <div class="work-card-inner">
-              <div class="work-num-wrap">
-                <span class="work-card-num">01</span>
-              </div>
-              <div class="work-content-wrap">
-                <div class="work-card-icon">
-                  <img src="assets/icons/icon-renovating.png" alt="" width="72" height="52" loading="lazy">
-                </div>
-                <h3 class="work-card-title">שיפוץ דירות קומפלט</h3>
-                <p class="work-card-desc">
-                  מהפך כולל לחלל המגורים: הריסה ופינוי, תכנון חלוקת חללים חדשה, החלפת כלל התשתיות, ריצוף וגמר מושלם המותאם במדויק לחיי המשפחה.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Service 02 -->
-          <div class="my-sticky" style="background-image: url('assets/images/service-bathroom.webp');">
-            <div class="work-card-inner">
-              <div class="work-num-wrap">
-                <span class="work-card-num">02</span>
-              </div>
-              <div class="work-content-wrap">
-                <div class="work-card-icon">
-                  <img src="assets/icons/icon-designing.png" alt="" width="72" height="52" loading="lazy">
-                </div>
-                <h3 class="work-card-title">שיפוץ חדרי אמבטיה ומקלחות</h3>
-                <p class="work-card-desc">
-                  איטום יסודי בתקנים המחמירים, צנרות מים ודלוחין חדשות, שיפועי ניקוז מדויקים, חיפויים בפורמט רחב והתקנת כלים סניטריים מעוצבים.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Service 03 -->
-          <div class="my-sticky" style="background-image: url('assets/images/service-kitchen.webp');">
-            <div class="work-card-inner">
-              <div class="work-num-wrap">
-                <span class="work-card-num">03</span>
-              </div>
-              <div class="work-content-wrap">
-                <div class="work-card-icon">
-                  <img src="assets/icons/icon-start-planning.png" alt="" width="72" height="52" loading="lazy">
-                </div>
-                <h3 class="work-card-title">שיפוץ ושדרוג מטבחים</h3>
-                <p class="work-card-desc">
-                  הכנת תשתיות חשמל, גז ואינסטלציה ייעודיות למטבח מודרני, חיפויי קיר, ריצוף, עבודות תאורה והתאמה מושלמת להתקנת הנגרות והשיש.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Service 04 -->
-          <div class="my-sticky" style="background-image: url('assets/images/service-drywall.webp');">
-            <div class="work-card-inner">
-              <div class="work-num-wrap">
-                <span class="work-card-num">04</span>
-              </div>
-              <div class="work-content-wrap">
-                <div class="work-card-icon">
-                  <img src="assets/icons/icon-detailed-plan.png" alt="" width="72" height="52" loading="lazy">
-                </div>
-                <h3 class="work-card-title">עבודות גבס והנמכות תקרה</h3>
-                <p class="work-card-desc">
-                  ביצוע תקרות צפות, נישות תאורה נסתרת, תעלות מיזוג אוויר, בידוד אקוסטי וטרמי, וקירות דקורטיביים בקווי גימור ישרים ונקיים.
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- Service 05 -->
-          <div class="my-sticky" style="background-image: url('assets/images/service-tiling.webp');">
-            <div class="work-card-inner">
-              <div class="work-num-wrap">
-                <span class="work-card-num">05</span>
-              </div>
-              <div class="work-content-wrap">
-                <div class="work-card-icon">
-                  <img src="assets/icons/icon-materials.png" alt="" width="72" height="52" loading="lazy">
-                </div>
-                <h3 class="work-card-title">עבודות ריצוף וחיפוי</h3>
-                <p class="work-card-desc">
-                  הדבקה וריצוף גרניט פורצלן במידות ענק (עד 120/270 ס"מ), פרקטים, בריקים ופסיפסים — בפילוס מדויק בקרני לייזר ורובה אפוקסית איכותית.
-                </p>
-              </div>
-            </div>
-          </div>
-                  </div>
-      </div>
-    </section>
-
-    <!-- Interactive Hotspots Section (Preserving Original Hotspot Blueprint) -->
-    <section class="hotspot-section" id="hotspot">
-      <div class="section-header">
-        <span class="section-badge badge-reveal">דיוק בפרטים</span>
-        <h2 class="section-title text-reveal-words">סטנדרט גימור שרואים בכל פינה</h2>
-        <p class="section-subtitle heading-entrance">
-          לחצו על הנקודות האינטראקטיביות בתמונה כדי לראות כיצד מיושמים עקרונות הגימור והאיכות שלנו בפועל:
-        </p>
-      </div>
-
-      <div class="hotspot-container img-reveal-scale">
-        <img src="assets/images/project-corridor.webp" alt="מסדרון וסלון בדירה משופצת — נקודות אינטראקטיביות" class="hotspot-img" width="1200" height="700" loading="lazy">
-        
-        <!-- Pin 1 -->
-        <button class="hotspot-pin" style="top: 25%; right: 48%;" data-target="spot1" aria-label="פרטי תאורה שקועה והנמכת גבס">1</button>
-        <div class="hotspot-card" id="spot1" style="top: 10%; right: 54%;">
-          <h4>תאורה שקועה ותקרת גבס</h4>
-          <p>פסי תאורה שקועים ("פס אפס") עם פיזור אור אחיד וגימור שפכטל אמריקאי ברמת משי מושלמת.</p>
-        </div>
-
-        <!-- Pin 2 -->
-        <button class="hotspot-pin" style="top: 80%; right: 42%;" data-target="spot2" aria-label="פרטי ריצוף גרניט פורצלן">2</button>
-        <div class="hotspot-card" id="spot2" style="top: 60%; right: 48%;">
-          <h4>ריצוף פורצלן במידות גדולות</h4>
-          <p>פילוס בלייזר, מרווחי פוגות אחידים של 2 מ"מ ומילוי רובה אפוקסית עמידה בפני כתמים ושחיקה.</p>
-        </div>
-
-        <!-- Pin 3 -->
-        <button class="hotspot-pin" style="top: 45%; right: 28%;" data-target="spot3" aria-label="פרטי דלתות קו אפס וחיפוי קיר">3</button>
-        <div class="hotspot-card" id="spot3" style="top: 35%; right: 34%;">
-          <h4>דלתות קו אפס וחיפוי אלגנטי</h4>
-          <p>יישור מדויק לקו הטיח, צביעה איכותית בתנור ועמידות לאורך שנים ללא פשרות.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Portfolio Gallery with Category Filters -->
-    <section class="gallery-section" id="gallery">
-      <div class="section-header">
-        <span class="section-badge badge-reveal">תיק עבודות</span>
-        <h2 class="section-title text-reveal-mask">פרויקטים נבחרים</h2>
-        <p class="section-subtitle heading-entrance">
-          הצצה למגוון עבודות שיפוצים וגמר שביצענו — דירות שלמות, מטבחים מעוצבים, חדרי רחצה יוקרתיים ומהפכים של לפני ואחרי.
-        </p>
-      </div>
-
-      <!-- Filter Buttons -->
-      <div class="filter-tabs">
-        <button class="filter-tab active" data-filter="all">הכל</button>
-        <button class="filter-tab" data-filter="apartments">שיפוץ דירות</button>
-        <button class="filter-tab" data-filter="bathrooms">חדרי רחצה</button>
-        <button class="filter-tab" data-filter="kitchens">מטבחים</button>
-        <button class="filter-tab" data-filter="living">סלונים וחללים מרכזיים</button>
-        <button class="filter-tab" data-filter="finishes">עבודות גמר</button>
-        <button class="filter-tab" data-filter="before-after">לפני ואחרי</button>
-      </div>
-
-      <!-- Gallery Grid -->
-      <div class="gallery-grid stagger-container">
-        <!-- Item 1: Full Apartment -->
-        <div class="gallery-item stagger-item img-reveal-editorial" data-category="apartments">
-          <img src="assets/images/service-full-apartment.webp" alt="שיפוץ דירה קומפלט" loading="lazy">
-          <div class="gallery-info">
-            <span class="gallery-tag">שיפוץ דירות</span>
-            <h4 class="gallery-title">שיפוץ דירת 5 חדרים מהיסוד</h4>
-            <p class="gallery-desc">הריסת מחיצות ישנות, החלפת כלל התשתיות, ריצוף חדש ויצירת חלל ציבורי פתוח ומואר.</p>
-          </div>
-        </div>
-
-        <!-- Item 2: Bathroom -->
-        <div class="gallery-item stagger-item img-reveal-editorial" data-category="bathrooms">
-          <img src="assets/images/project-bathroom.webp" alt="שיפוץ חדר רחצה יוקרתי" loading="lazy">
-          <div class="gallery-info">
-            <span class="gallery-tag">חדרי רחצה</span>
-            <h4 class="gallery-title">סוויטת רחצה במראה מלונאי</h4>
-            <p class="gallery-desc">איטום כפול, מקלחון Walk-in מרווח, ברזים שקועים בגוון שחור מט וחיפוי פורצלן גדול.</p>
-          </div>
-        </div>
-
-        <!-- Item 3: Kitchen -->
-        <div class="gallery-item stagger-item img-reveal-editorial" data-category="kitchens">
-          <img src="assets/images/project-kitchen.webp" alt="שיפוץ מטבח מודרני" loading="lazy">
-          <div class="gallery-info">
-            <span class="gallery-tag">מטבחים</span>
-            <h4 class="gallery-title">מטבח כפרי-מודרני עם אי מרכזי</h4>
-            <p class="gallery-desc">תשתיות חשמל ואינסטלציה חכמות, ריצוף אחיד, חיפוי בריקים אלגנטי ותאורה ממוקדת.</p>
-          </div>
-        </div>
-
-        <!-- Item 4: Living Room -->
-        <div class="gallery-item stagger-item img-reveal-editorial" data-category="living">
-          <img src="assets/images/project-living.webp" alt="סלון מודרני לאחר שיפוץ" loading="lazy">
-          <div class="gallery-info">
-            <span class="gallery-tag">סלונים וחללים מרכזיים</span>
-            <h4 class="gallery-title">עיצוב חלל אירוח פתוח</h4>
-            <p class="gallery-desc">עבודות גבס דקורטיביות, תאורה שקועה נסתרת, ריצוף פורצלן מלוטש וקירות בגימור משי.</p>
-          </div>
-        </div>
-
-        <!-- Item 5: Tiling / Finishes -->
-        <div class="gallery-item stagger-item img-reveal-editorial" data-category="finishes">
-          <img src="assets/images/service-tiling.webp" alt="עבודות ריצוף וגמר" loading="lazy">
-          <div class="gallery-info">
-            <span class="gallery-tag">עבודות גמר</span>
-            <h4 class="gallery-title">ריצוף מדויק בפורמט ענק</h4>
-            <p class="gallery-desc">יישום אריחי 120/120 ס"מ, יישור מושלם עם פלס לייזר ומריחת רובה אפוקסית בגוון האריח.</p>
-          </div>
-        </div>
-
-        <!-- Item 6: Before & After -->
-        <div class="gallery-item stagger-item img-reveal-editorial" data-category="before-after">
-          <img src="assets/images/project-after.webp" alt="מהפך שיפוץ דירה — אחרי" loading="lazy">
-          <div class="gallery-info">
-            <span class="gallery-tag">לפני ואחרי</span>
-            <h4 class="gallery-title">מהפך מלא לדירה ישנה</h4>
-            <p class="gallery-desc">מדירה חשוכה ומוזנחת משנות ה-70 לדירת בוטיק מודרנית, מרווחת ומוארת תוך 6 שבועות.</p>
+        <div class="st2-media">
+          <figure class="st2-photo img-reveal-scale"><img src="assets/images/about-craftsman.webp" alt="מנהל עבודה עובר על תוכניות השיפוץ" width="1200" height="675" loading="lazy"></figure>
+          <div class="st2-facts">
+            <div><b dir="ltr">4–8</b><span>שבועות לשיפוץ דירה קומפלט</span></div>
+            <div><b dir="ltr">7–14</b><span>ימי עבודה לחדר רחצה או מטבח</span></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Work Process Section (5 Core Stages) -->
-    <section class="process-section" id="process">
-      <div class="section-header">
-        <span class="section-badge badge-reveal" style="color: #F1B86E;">תהליך עבודה מובנה</span>
-        <h2 class="section-title heading-entrance">5 שלבים פשוטים לשיפוץ מושלם</h2>
-        <p class="section-subtitle heading-entrance">
-          ניהול מסודר, שקוף ומדויק מהפגישה הראשונה ועד למסירת המפתח — בלי הפתעות ובלי חריגות תקציב.
-        </p>
-      </div>
-
-      <div class="process-steps-container stagger-container">
-        <!-- Step 1 -->
-        <div class="process-step-card stagger-item">
-          <div class="process-num">01</div>
-          <h3 class="process-title">שיחת היכרות והבנת הצרכים</h3>
-          <p class="process-desc">
-            הקשבה מעמיקה לחלומות, להרגלי החיים, ללוחות הזמנים המבוקשים ולמסגרת התקציב שלכם.
-          </p>
+    <!-- 3. Services: pinned horizontal 3D gallery -->
+    <section class="services svc-lux" id="services">
+      <div class="svc-bg" aria-hidden="true"><img src="assets/images/project-corridor.webp" alt="" width="1200" height="1800" loading="lazy"></div>
+      <span class="svc-notch" aria-hidden="true"><span>מה אנחנו עושים</span></span>
+      <div class="wrap">
+        <div class="svc-head">
+          <div class="svc-title">
+            <h2 class="h2 h2-light"><span class="text-reveal-mask">שישה תחומים,</span><span class="text-reveal-mask"><b>צוות אחד.</b></span></h2>
+            <p class="svc-lede">מנהל עבודה אחד מתאם את כל בעלי המקצוע, מהיום הראשון ועד המסירה.</p>
+          </div>
+          <p class="svc-intro"><a href="services.html" class="link-arrow link-light">לכל השירותים <span aria-hidden="true">←</span></a></p>
         </div>
 
-        <!-- Step 2 -->
-        <div class="process-step-card stagger-item">
-          <div class="process-num">02</div>
-          <h3 class="process-title">פגישה והערכת היקף העבודה</h3>
-          <p class="process-desc">
-            סיור יסודי בנכס, בדיקת התשתיות הקיימות בשטח, מדידות מדויקות ואיתור אתגרים הנדסיים מראש.
-          </p>
-        </div>
-
-        <!-- Step 3 -->
-        <div class="process-step-card stagger-item">
-          <div class="process-num">03</div>
-          <h3 class="process-title">הצעת מחיר ותכנון</h3>
-          <p class="process-desc">
-            כתב כמויות מפורט ושקוף לחלוטין ("ללא אותיות קטנות"), לוח זמנים מוגדר וחוזה עבודה מפורט.
-          </p>
-        </div>
-
-        <!-- Step 4 -->
-        <div class="process-step-card stagger-item">
-          <div class="process-num">04</div>
-          <h3 class="process-title">תחילת ביצוע השיפוץ</h3>
-          <p class="process-desc">
-            עבודה מדורגת לפי שלבים: הגנה על הנכס, הריסה, תשתיות, בינוי, איטום, ריצוף וגמר בפיקוח הדוק.
-          </p>
-        </div>
-
-        <!-- Step 5 -->
-        <div class="process-step-card stagger-item">
-          <div class="process-num">05</div>
-          <h3 class="process-title">בקרת איכות ומסירה</h3>
-          <p class="process-desc">
-            בדיקה קפדנית של כל נקודת גמר, תיקוני צבע אחרונים, ניקיון יסודי ומסירת המפתח עם תעודת אחריות.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Why Choose Us -->
-    <section class="why-section" id="why-us">
-      <div class="section-header">
-        <span class="section-badge badge-reveal">היתרונות שלנו</span>
-        <h2 class="section-title text-reveal-words">למה לבחור בארזים שיפוצים?</h2>
-        <p class="section-subtitle heading-entrance">
-          כי שיפוץ מוצלח נבנה על מקצועיות ללא פשרות, שקיפות מלאה ותקשורת רציפה יום-יום.
-        </p>
-      </div>
-
-      <div class="why-grid stagger-container">
-        <div class="why-card stagger-item">
-          <div class="why-icon">✓</div>
-          <h3 class="why-title">עבודה מסודרת ומתוכננת</h3>
-          <p class="why-desc">לוח זמנים מפורט מראש, תיאום מלא בין בעלי המקצוע וניהול לוגיסטי יעיל המונע עיכובים.</p>
-        </div>
-
-        <div class="why-card stagger-item">
-          <div class="why-icon">✓</div>
-          <h3 class="why-title">הקפדה על הפרטים הקטנים</h3>
-          <p class="why-desc">פילוס מילימטרי, קווי חיתוך נקיים, שפכטל משי ורובה אחידה. אנחנו לא מעגלים פינות לעולם.</p>
-        </div>
-
-        <div class="why-card stagger-item">
-          <div class="why-icon">✓</div>
-          <h3 class="why-title">תקשורת רציפה ושקופה</h3>
-          <p class="why-desc">עדכונים שוטפים בוואטסאפ ובתמונות מהשטח, מענה מהיר לכל שאלה וזמינות מלאה לאורך כל הדרך.</p>
-        </div>
-
-        <div class="why-card stagger-item">
-          <div class="why-icon">✓</div>
-          <h3 class="why-title">שקיפות מלאה בתקציב</h3>
-          <p class="why-desc">הצעת מחיר ברורה ומפורטת עד רמת הבורג. אין הפתעות, אין "תוספות של הרגע האחרון".</p>
-        </div>
-
-        <div class="why-card stagger-item">
-          <div class="why-icon">✓</div>
-          <h3 class="why-title">התאמה מלאה לצרכים שלכם</h3>
-          <p class="why-desc">פתרונות הנדסיים ועיצוביים המותאמים בדיוק לאורח החיים, להרגלים ולתקציב שהגדרתם מראש.</p>
-        </div>
-
-        <div class="why-card stagger-item">
-          <div class="why-icon">✓</div>
-          <h3 class="why-title">רמת גימור ואחריות מלאה</h3>
-          <p class="why-desc">עבודה עם חומרים תקניים מובחרים ואחריות מקצועית מלאה בכתב על כל עבודות התשתית והגמר.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Trust & Core Commitments (Ethical alternative to fake testimonials) -->
-    <section class="trust-section">
-      <div class="section-header">
-        <span class="section-badge badge-reveal">אמנת השירות שלנו</span>
-        <h2 class="section-title heading-entrance">ההתחייבות שלנו לשקט הנפשי שלכם</h2>
-        <p class="section-subtitle heading-entrance">
-          סטנדרטים וערכי עבודה מנחים המבטיחים שכל פרויקט מתבצע באחריות וברמה הגבוהה ביותר:
-        </p>
-      </div>
-
-      <div class="trust-container stagger-container">
-        <div class="trust-card stagger-item">
-          <h3>התחייבות ללוח זמנים</h3>
-          <p>
-            אנו מתחייבים בחוזה לתאריך סיום ומסירה, עם תכנון עבודה מוקפד המאפשר לכם לתכנן את המעבר בביטחון מלא.
-          </p>
-        </div>
-
-        <div class="trust-card stagger-item">
-          <h3>חומרי תשתית בעלי תו תקן</h3>
-          <p>
-            שימוש בלעדי בחומרי מליטה, צנרות מים ודלוחין, לוחות גבס וחומרי איטום מהחברות המובילות בישראל בלבד.
-          </p>
-        </div>
-
-        <div class="trust-card stagger-item">
-          <h3>אתר עבודה נקי ומסודר</h3>
-          <p>
-            שמירה על ניקיון בסיום כל יום עבודה, פינוי פסולת לאתרים מורשים והתחשבות מרבית בשכנים ובסביבת המגורים.
-          </p>
-        </div>
-
-        <div class="trust-card stagger-item">
-          <h3>אחריות ושירות לאחר המסירה</h3>
-          <p>
-            הקשר שלנו לא מסתיים במסירת המפתח — אנו זמינים עבורכם לכל שאלה, בדיקה והתאמה גם לאחר סיום הפרויקט.
-          </p>
-        </div>
-      </div>
-    </section>
-
-        <!-- FAQ Section — Pookubeh Exact Design Replication -->
-    <section class="pookubeh-faq-section" id="faq">
-      <div class="faq-inner-container">
-        <div class="faq-two-col-grid">
-          
-          <!-- RIGHT COLUMN (Sticky on Desktop) -->
-          <div class="faq-meta-col">
-            <div class="faq-headline-wrap" dir="ltr">
-              <h2 class="faq-editorial-heading">
-                <span>GOT A</span>
-                <span>QUESTION?</span>
-              </h2>
-            </div>
-
-            <!-- Decorative Ornament Line with Diamonds & Subtitle -->
-            <div class="faq-sub-ornament">
-              <div class="faq-diamond"></div>
-              <div class="faq-ornament-line"></div>
-              <span class="faq-sub-badge">שאלות נפוצות</span>
-              <div class="faq-ornament-line"></div>
-              <div class="faq-diamond"></div>
-            </div>
-
-            <!-- Desktop Contact Box -->
-            <div class="faq-contact-box faq-contact-desktop">
-              <h3 class="faq-contact-title">יש לכם שאלה שלא מופיעה כאן?</h3>
-              <p class="faq-contact-text">
-                מוזמנים לפנות לצוות ארזים שיפוצים ונשמח לסייע בכל שאלה ובקשה:
-              </p>
-              <div class="faq-contact-actions">
-                <div class="faq-contact-row">
-                  <a href="tel:0548438856" class="faq-contact-link faq-phone-link">
-                    <span class="faq-link-icon">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.05 15.05 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z" fill="#16A34A"/>
-                      </svg>
-                    </span>
-                    <span class="faq-link-label">שיחה ישירה:</span>
-                    <span class="faq-link-num" dir="ltr">054-8438856</span>
-                  </a>
-                </div>
-                <div class="faq-contact-row">
-                  <a href="https://wa.me/972548438856?text=%D7%A9%D7%9param%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%93%D7%A8%D7%9A%20%D7%94%D7%90%D7%AA%D7%A8%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%AA%D7%90%D7%9D%20%D7%A4%D7%92%D7%99%D7%A9%D7%AA%20%D7%99%D7%99%D7%A2%D7%95%D7%A5%20%D7%95%D7%94%D7%A6%D7%A2%D7%AA%20%D7%9E%D7%97%D7%99%D7%A8%20%D7%9C%D7%A9%D7%99%D7%A4%D7%95%D7%A5" class="faq-contact-link faq-wa-link" target="_blank" rel="noopener">
-                    <span class="faq-link-icon">
-                      <svg width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 2C8.268 2 2 8.268 2 16c0 2.585.698 5.01 1.916 7.106L2.062 29.24a.8.8 0 0 0 .977.977l6.237-1.871A13.93 13.93 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2z" fill="#25D366"/>
-                        <path d="M23.23 19.34c-.31-.16-1.85-.91-2.14-1.02-.29-.1-.5-.16-.71.16-.21.31-.81 1.02-.99 1.23-.18.21-.37.23-.68.08-.31-.16-1.32-.49-2.52-1.56-.93-.83-1.56-1.86-1.74-2.17-.18-.31-.02-.48.14-.64.14-.14.31-.36.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.7-.97-2.33-.26-.61-.52-.53-.71-.54-.18-.01-.39-.01-.6-.01-.21 0-.55.08-.84.39-.29.31-1.1 1.07-1.1 2.61s1.12 3.03 1.28 3.24c.16.21 2.2 3.37 5.34 4.72.75.32 1.33.52 1.78.66.75.24 1.43.21 1.97.13.6-.09 1.85-.76 2.11-1.49.26-.73.26-1.35.18-1.49-.08-.13-.29-.21-.6-.36z" fill="#FFFFFF"/>
-                      </svg>
-                    </span>
-                    <span class="faq-link-label">מענה ישיר בוואטסאפ (זמינות מיידית)</span>
-                  </a>
-                </div>
+        <div class="panels">
+          <article class="panel is-active" tabindex="0" aria-expanded="true">
+            <img src="assets/images/service-full-apartment.webp" alt="דירה לאחר שיפוץ קומפלט" width="800" height="533" loading="lazy">
+            <div class="panel-shade" aria-hidden="true"></div>
+            <span class="panel-num">01</span>
+            <span class="panel-plus" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
+            <div class="panel-content">
+              <h3 class="panel-title">שיפוץ דירה קומפלט</h3>
+              <div class="panel-body">
+                <p>הריסה ופינוי, חלוקת חללים חדשה, החלפת כל התשתיות, ריצוף וגמר. דירה שלמה מקבלן אחד.</p>
+                <a href="#contact" class="panel-cta">להצעת מחיר <span aria-hidden="true">←</span></a>
               </div>
+            </div>
+          </article>
+          <article class="panel" tabindex="0" aria-expanded="false">
+            <img src="assets/images/service-bathroom.webp" alt="חדר רחצה משופץ" width="800" height="533" loading="lazy">
+            <div class="panel-shade" aria-hidden="true"></div>
+            <span class="panel-num">02</span>
+            <span class="panel-plus" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
+            <div class="panel-content">
+              <h3 class="panel-title">חדרי רחצה ומקלחות</h3>
+              <div class="panel-body">
+                <p>איטום בתקן, צנרת מים ודלוחין חדשה, שיפועי ניקוז מדויקים וחיפוי בפורמט גדול.</p>
+                <a href="#contact" class="panel-cta">להצעת מחיר <span aria-hidden="true">←</span></a>
+              </div>
+            </div>
+          </article>
+          <article class="panel" tabindex="0" aria-expanded="false">
+            <img src="assets/images/service-kitchen.webp" alt="מטבח לאחר שיפוץ" width="800" height="533" loading="lazy">
+            <div class="panel-shade" aria-hidden="true"></div>
+            <span class="panel-num">03</span>
+            <span class="panel-plus" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
+            <div class="panel-content">
+              <h3 class="panel-title">מטבחים</h3>
+              <div class="panel-body">
+                <p>תשתיות חשמל, גז ואינסטלציה, חיפוי קיר, ריצוף ותאורה. מוכן לנגרות ולשיש.</p>
+                <a href="#contact" class="panel-cta">להצעת מחיר <span aria-hidden="true">←</span></a>
+              </div>
+            </div>
+          </article>
+          <article class="panel" tabindex="0" aria-expanded="false">
+            <img src="assets/images/service-drywall.webp" alt="עבודות גבס ותקרה" width="800" height="534" loading="lazy">
+            <div class="panel-shade" aria-hidden="true"></div>
+            <span class="panel-num">04</span>
+            <span class="panel-plus" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
+            <div class="panel-content">
+              <h3 class="panel-title">גבס והנמכות תקרה</h3>
+              <div class="panel-body">
+                <p>תקרות צפות, נישות לתאורה נסתרת, תעלות מיזוג ובידוד אקוסטי.</p>
+                <a href="#contact" class="panel-cta">להצעת מחיר <span aria-hidden="true">←</span></a>
+              </div>
+            </div>
+          </article>
+          <article class="panel" tabindex="0" aria-expanded="false">
+            <img src="assets/images/article-materials.webp" alt="סלון עם ריצוף עץ" width="800" height="422" loading="lazy">
+            <div class="panel-shade" aria-hidden="true"></div>
+            <span class="panel-num">05</span>
+            <span class="panel-plus" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
+            <div class="panel-content">
+              <h3 class="panel-title">ריצוף וחיפוי</h3>
+              <div class="panel-body">
+                <p>גרניט פורצלן עד 120×270 ס״מ, פרקט ופסיפס. פילוס בלייזר ורובה אפוקסית.</p>
+                <a href="#contact" class="panel-cta">להצעת מחיר <span aria-hidden="true">←</span></a>
+              </div>
+            </div>
+          </article>
+          <article class="panel" tabindex="0" aria-expanded="false">
+            <img src="assets/images/service-paint.webp" alt="צביעת קיר ברולר" width="800" height="559" loading="lazy">
+            <div class="panel-shade" aria-hidden="true"></div>
+            <span class="panel-num">06</span>
+            <span class="panel-plus" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span>
+            <div class="panel-content">
+              <h3 class="panel-title">צבע ושפכטל</h3>
+              <div class="panel-body">
+                <p>שפכטל אמריקאי בגימור משי, צבע לקירות ותקרות ותיקונים אחרונים לפני המסירה.</p>
+                <a href="#contact" class="panel-cta">להצעת מחיר <span aria-hidden="true">←</span></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Before / after. The "before" side currently shows a sketch of the same room (assets/images/*-sketch.webp).
+         When real before photos arrive, put them in data-before / the .ba-before img and change the "תכנון" tag to "לפני". -->
+    <section class="ba ba-h" id="before-after">
+      <div class="wrap bh-grid">
+        <div class="bh-side">
+          <h2 class="h2 bh-title"><span class="text-reveal-mask">מהסקיצה</span><span class="text-reveal-mask"><b>לבית גמור.</b></span></h2>
+          <p class="bh-intro">גררו את הקו כדי לעבור בין התכנון לתוצאה בשטח.</p>
+          <ul class="ba-thumbs bh-list" aria-label="בחירת פרויקט להשוואה">
+              <li><button class="ba-thumb bh-row" type="button" aria-pressed="true" data-after="assets/images/project-after.webp" data-before="assets/images/project-after-sketch.webp" data-title="סלון ומטבח, דירת 5 חדרים" data-alt-after="סלון ומטבח פתוחים לאחר השיפוץ" data-alt-before="סקיצת התכנון של הסלון והמטבח">
+                <span class="bh-idx">01</span><span class="bh-txt"><b>סלון ומטבח, דירת 5 חדרים</b><small>דירה קומפלט</small></span><i class="bh-mark" aria-hidden="true"></i>
+              </button></li>
+              <li><button class="ba-thumb bh-row" type="button" aria-pressed="false" data-after="assets/images/project-kitchen.webp" data-before="assets/images/project-kitchen-sketch.webp" data-title="מטבח עם אי מרכזי" data-alt-after="מטבח עם אי מרכזי לאחר השיפוץ" data-alt-before="סקיצת התכנון של המטבח">
+                <span class="bh-idx">02</span><span class="bh-txt"><b>מטבח עם אי מרכזי</b><small>מטבחים</small></span><i class="bh-mark" aria-hidden="true"></i>
+              </button></li>
+              <li><button class="ba-thumb bh-row" type="button" aria-pressed="false" data-after="assets/images/article-bath-mistakes.webp" data-before="assets/images/article-bath-mistakes-sketch.webp" data-title="חדר רחצה עם אמבטיה" data-alt-after="חדר רחצה עם אמבטיה עומדת לאחר השיפוץ" data-alt-before="סקיצת התכנון של חדר הרחצה">
+                <span class="bh-idx">03</span><span class="bh-txt"><b>חדר רחצה עם אמבטיה</b><small>חדרי רחצה</small></span><i class="bh-mark" aria-hidden="true"></i>
+              </button></li>
+              <li><button class="ba-thumb bh-row" type="button" aria-pressed="false" data-after="assets/images/hero-renovation.webp" data-before="assets/images/hero-renovation-sketch.webp" data-title="סלון ופינת אירוח" data-alt-after="סלון ופינת אירוח לאחר השיפוץ" data-alt-before="סקיצת התכנון של הסלון">
+                <span class="bh-idx">04</span><span class="bh-txt"><b>סלון ופינת אירוח</b><small>סלונים</small></span><i class="bh-mark" aria-hidden="true"></i>
+              </button></li>
+          </ul>
+          <a href="projects.html" class="bh-more">לכל הפרויקטים <span aria-hidden="true">←</span></a>
+        </div>
+
+        <div class="bh-stage">
+          <div class="ba-viewer bh-viewer" data-ba>
+            <img class="ba-img ba-after" src="assets/images/project-after.webp" alt="סלון ומטבח פתוחים לאחר השיפוץ" width="1200" height="816" loading="lazy" draggable="false">
+            <div class="ba-before"><img class="ba-img" src="assets/images/project-after-sketch.webp" alt="סקיצת התכנון של הסלון והמטבח" width="1200" height="816" loading="lazy" draggable="false"></div>
+            <div class="ba-line bh-line" aria-hidden="true"><span class="bh-knob"><svg viewBox="0 0 24 24"><path d="M9 7l-5 5 5 5M15 7l5 5-5 5"/></svg></span></div>
+            <span class="bh-tag bh-tag-before">תכנון</span>
+            <span class="bh-tag bh-tag-after">ביצוע</span>
+            <input class="ba-range" type="range" min="0" max="100" value="50" dir="ltr" aria-label="השוואה בין התכנון לתוצאה">
+          </div>
+          <div class="ba-meta bh-meta"><span class="ba-num">01</span><h3 class="ba-title">סלון ומטבח, דירת 5 חדרים</h3></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Projects: frames tip up in 3D as they arrive -->
+    <section class="projects" id="projects">
+      <div class="wrap">
+        <div class="section-head pj-head">
+          <div>
+            <h2 class="h2"><span class="text-reveal-mask">עבודות</span><span class="text-reveal-mask"><b>שמסרנו לאחרונה.</b></span></h2>
+          </div>
+          <a href="projects.html" class="link-arrow">לכל הפרויקטים <span aria-hidden="true">←</span></a>
+        </div>
+
+        <div class="stack">
+          <article class="stack-card" style="--i:0">
+            <div class="stack-media"><img src="assets/images/project-after.webp" alt="סלון ומטבח פתוחים לאחר שיפוץ" width="1200" height="816" loading="lazy"></div>
+            <div class="stack-info">
+              <div class="stack-top"><span class="stack-num">01</span><span class="stack-count">/ 04</span></div>
+              <div>
+                <p class="stack-tag">דירה קומפלט</p>
+                <h3>דירת 5 חדרים, שיפוץ מהיסוד</h3>
+                <p class="stack-text">הריסת מחיצות ישנות, החלפת כל התשתיות, ריצוף חדש וחלל ציבורי פתוח ומואר.</p>
+                <ul class="stack-list"><li>הריסה ובינוי</li><li>תשתיות חשמל ומים</li><li>ריצוף וגמר</li></ul>
+              </div>
+            </div>
+          </article>
+          <article class="stack-card" style="--i:1">
+            <div class="stack-media"><img src="assets/images/project-bathroom.webp" alt="חדר רחצה בסגנון מלונאי" width="1200" height="1799" loading="lazy"></div>
+            <div class="stack-info">
+              <div class="stack-top"><span class="stack-num">02</span><span class="stack-count">/ 04</span></div>
+              <div>
+                <p class="stack-tag">חדרי רחצה</p>
+                <h3>חדר רחצה מלונאי</h3>
+                <p class="stack-text">איטום כפול, ברזים שקועים וחיפוי פורצלן בפורמט גדול.</p>
+                <ul class="stack-list"><li>איטום</li><li>צנרת ודלוחין</li><li>חיפוי וכלים סניטריים</li></ul>
+              </div>
+            </div>
+          </article>
+          <article class="stack-card" style="--i:2">
+            <div class="stack-media"><img src="assets/images/project-kitchen.webp" alt="מטבח עם אי מרכזי" width="1200" height="795" loading="lazy"></div>
+            <div class="stack-info">
+              <div class="stack-top"><span class="stack-num">03</span><span class="stack-count">/ 04</span></div>
+              <div>
+                <p class="stack-tag">מטבחים</p>
+                <h3>מטבח עם אי מרכזי</h3>
+                <p class="stack-text">תשתיות חשמל ואינסטלציה לאי, ריצוף אחיד, חיפוי קיר ותאורה ממוקדת.</p>
+                <ul class="stack-list"><li>תשתיות לאי</li><li>חיפוי קיר</li><li>תאורה</li></ul>
+              </div>
+            </div>
+          </article>
+          <article class="stack-card" style="--i:3">
+            <div class="stack-media"><img src="assets/images/article-budget.webp" alt="בית פרטי לאחר שיפוץ ועבודות גמר" width="800" height="533" loading="lazy"></div>
+            <div class="stack-info">
+              <div class="stack-top"><span class="stack-num">04</span><span class="stack-count">/ 04</span></div>
+              <div>
+                <p class="stack-tag">בית פרטי</p>
+                <h3>בית פרטי, שיפוץ ועבודות גמר</h3>
+                <p class="stack-text">שיפוץ פנים, ריצוף, גבס וצבע, ועבודות גמר לבית צמוד קרקע.</p>
+                <ul class="stack-list"><li>ריצוף</li><li>גבס וצבע</li><li>עבודות גמר</li></ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="how how2" id="process">
+      <div class="wrap">
+        <div class="hw-grid">
+          <div class="hw-media">
+            <div class="hw-stage">
+              <img class="hw-frame is-active" src="assets/images/about-craftsman.webp" alt="מנהל עבודה עובר על תוכניות" width="1200" height="900" loading="lazy">
+              <img class="hw-frame" src="assets/images/project-before.webp" alt="דירה לפני תחילת השיפוץ" width="1200" height="900" loading="lazy">
+              <img class="hw-frame" src="assets/images/project-after-sketch.webp" alt="סקיצת תכנון של הסלון" width="1200" height="900" loading="lazy">
+              <img class="hw-frame" src="assets/images/service-drywall.webp" alt="עבודות גבס בזמן הביצוע" width="1200" height="900" loading="lazy">
+              <img class="hw-frame" src="assets/images/project-after.webp" alt="סלון ומטבח מוכנים למסירה" width="1200" height="900" loading="lazy">
+              <span class="hw-count" aria-hidden="true"><b>01</b> / 05</span>
             </div>
           </div>
-
-          <!-- LEFT COLUMN (Questions Accordion) -->
-          <div class="faq-accordion-col">
-            <div class="faq-accordion-list">
-              
-              <!-- Item 01 -->
-              <div class="pookubeh-faq-item is-open" data-faq-id="1">
-                <button type="button" class="faq-accordion-trigger" aria-expanded="true">
-                  <h3 class="faq-question-title">כמה זמן לוקח שיפוץ דירה?</h3>
-                  <div class="faq-trigger-icon" aria-hidden="true">
-                    <span class="faq-icon-line faq-icon-h"></span>
-                    <span class="faq-icon-line faq-icon-v"></span>
-                  </div>
-                </button>
-                <div class="faq-accordion-body" style="max-height: 500px;">
-                  <p class="faq-answer-text">
-                    משך הזמן תלוי בהיקף הפרויקט. שיפוץ דירה קומפלט ממוצע (הכולל הריסה, החלפת כלל התשתיות, בינוי, איטום, ריצוף וגמר) אורך בדרך כלל בין 4 ל-8 שבועות. שיפוץ ממוקד (כגון חדר רחצה או מטבח) נמשך לרוב בין 7 ל-14 ימי עבודה. לפני תחילת העבודה אנו מגדירים לוח זמנים שבועי מפורט ומתחייבים לו.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Item 02 -->
-              <div class="pookubeh-faq-item" data-faq-id="2">
-                <button type="button" class="faq-accordion-trigger" aria-expanded="false">
-                  <h3 class="faq-question-title">איך נקבעת עלות השיפוץ וכיצד מונעים חריגות?</h3>
-                  <div class="faq-trigger-icon" aria-hidden="true">
-                    <span class="faq-icon-line faq-icon-h"></span>
-                    <span class="faq-icon-line faq-icon-v"></span>
-                  </div>
-                </button>
-                <div class="faq-accordion-body">
-                  <p class="faq-answer-text">
-                    עלות השיפוץ מבוססת על כתב כמויות מפורט ומדידה יסודית בנכס. אנו בונים הצעת מחיר סגורה ושקופה הכוללת את כל העבודות וחומרי התשתית ("חומרים שחורים"), כך שאין תוספות בלתי צפויות. במידה ואתם מבקשים לשנות או להוסיף רכיב במהלך העבודה, הדבר מתומחר ומאושר בכתב מראש.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Item 03 -->
-              <div class="pookubeh-faq-item" data-faq-id="3">
-                <button type="button" class="faq-accordion-trigger" aria-expanded="false">
-                  <h3 class="faq-question-title">האם ניתן לשפץ חדר אחד בלבד או לבצע שיפוץ חלקי?</h3>
-                  <div class="faq-trigger-icon" aria-hidden="true">
-                    <span class="faq-icon-line faq-icon-h"></span>
-                    <span class="faq-icon-line faq-icon-v"></span>
-                  </div>
-                </button>
-                <div class="faq-accordion-body">
-                  <p class="faq-answer-text">
-                    בהחלט. אנו מבצעים שיפוצי חדר רחצה, שדרוג מטבחים, עבודות ריצוף, צבע או גבס גם כפרויקטים נקודתיים. כל פרויקט — קטן כגדול — מקבל אצלנו את אותה רמת הקפדה, בידוד אזור העבודה מניילונים והגנה על שאר חלקי הבית.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Item 04 -->
-              <div class="pookubeh-faq-item" data-faq-id="4">
-                <button type="button" class="faq-accordion-trigger" aria-expanded="false">
-                  <h3 class="faq-question-title">האם אתם מספקים את חומרי העבודה?</h3>
-                  <div class="faq-trigger-icon" aria-hidden="true">
-                    <span class="faq-icon-line faq-icon-h"></span>
-                    <span class="faq-icon-line faq-icon-v"></span>
-                  </div>
-                </button>
-                <div class="faq-accordion-body">
-                  <p class="faq-answer-text">
-                    כן. אנו מספקים את כל חומרי התשתית ("חומרים שחורים") — חול, מלט, בלוקים, גבס תקני, צנרות SP/פקסגול, חומרי איטום מורשים, דבקים ורובה אפוקסית. חומרי הגמר ("חומרים לבנים" — ריצוף, חיפוי, כלים סניטריים, גופי תאורה) נרכשים על ידכם, ואנו מלווים ומסייעים בבדיקת כמויות והתאמה טכנית.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Item 05 -->
-              <div class="pookubeh-faq-item" data-faq-id="5">
-                <button type="button" class="faq-accordion-trigger" aria-expanded="false">
-                  <h3 class="faq-question-title">האם ניתן לקבל הצעת מחיר מדויקת לאחר ביקור בנכס?</h3>
-                  <div class="faq-trigger-icon" aria-hidden="true">
-                    <span class="faq-icon-line faq-icon-h"></span>
-                    <span class="faq-icon-line faq-icon-v"></span>
-                  </div>
-                </button>
-                <div class="faq-accordion-body">
-                  <p class="faq-answer-text">
-                    כן, וזהו גם הצעד הנכון והמקצועי ביותר. ביקור ראשוני בנכס מאפשר לבחון את מצב התשתיות בפועל, להבין את תוכניות השיפוץ שלכם ולבצע מדידה מדויקת. בעקבות הפגישה תקבלו הצעת מחיר מפורטת ומסודרת — ללא כל התחייבות.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Item 06 -->
-              <div class="pookubeh-faq-item" data-faq-id="6">
-                <button type="button" class="faq-accordion-trigger" aria-expanded="false">
-                  <h3 class="faq-question-title">האם אפשר לבצע שיפוץ בהתאם לתקציב מוגדר מראש?</h3>
-                  <div class="faq-trigger-icon" aria-hidden="true">
-                    <span class="faq-icon-line faq-icon-h"></span>
-                    <span class="faq-icon-line faq-icon-v"></span>
-                  </div>
-                </button>
-                <div class="faq-accordion-body">
-                  <p class="faq-answer-text">
-                    בהחלט. אנו מאמינים בהתאמה חכמה למסגרת התקציב. בפגישת האפיון נגדיר את סדרי העדיפויות, ונמליץ על פתרונות ביצוע ובחירת חומרים שיאפשרו להגיע לתוצאה מרשימה ואיכותית במסגרת התקציב שקבעתם.
-                  </p>
-                </div>
-              </div>
-
+          <div class="hw-copy">
+            <div class="how-head hw-head">
+              <h2 class="h2"><span class="text-reveal-mask">איך עובדים</span><span class="text-reveal-mask"><b>איתנו.</b></span></h2>
+              <p class="how-intro">חמישה שלבים קבועים, אותו דבר בכל פרויקט.</p>
             </div>
-
-            <!-- Mobile Contact Box (Stacked underneath questions) -->
-            <div class="faq-contact-box faq-contact-mobile">
-              <h3 class="faq-contact-title">יש לכם שאלה שלא מופיעה כאן?</h3>
-              <p class="faq-contact-text">
-                מוזמנים לפנות לצוות ארזים שיפוצים ונשמח לסייע בכל שאלה ובקשה:
-              </p>
-              <div class="faq-contact-actions">
-                <div class="faq-contact-row">
-                  <a href="tel:0548438856" class="faq-contact-link faq-phone-link">
-                    <span class="faq-link-icon">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.05 15.05 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z" fill="#16A34A"/>
-                      </svg>
-                    </span>
-                    <span class="faq-link-label">שיחה ישירה:</span>
-                    <span class="faq-link-num" dir="ltr">054-8438856</span>
-                  </a>
-                </div>
-                <div class="faq-contact-row">
-                  <a href="https://wa.me/972548438856?text=%D7%A9%D7%9param%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%93%D7%A8%D7%9A%20%D7%94%D7%90%D7%AA%D7%A8%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%AA%D7%90%D7%9D%20%D7%A4%D7%92%D7%99%D7%A9%D7%AA%20%D7%99%D7%99%D7%A2%D7%95%D7%A5%20%D7%95%D7%94%D7%A6%D7%A2%D7%AA%20%D7%9E%D7%97%D7%99%D7%A8%20%D7%9C%D7%A9%D7%99%D7%A4%D7%95%D7%A5" class="faq-contact-link faq-wa-link" target="_blank" rel="noopener">
-                    <span class="faq-link-icon">
-                      <svg width="22" height="22" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 2C8.268 2 2 8.268 2 16c0 2.585.698 5.01 1.916 7.106L2.062 29.24a.8.8 0 0 0 .977.977l6.237-1.871A13.93 13.93 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2z" fill="#25D366"/>
-                        <path d="M23.23 19.34c-.31-.16-1.85-.91-2.14-1.02-.29-.1-.5-.16-.71.16-.21.31-.81 1.02-.99 1.23-.18.21-.37.23-.68.08-.31-.16-1.32-.49-2.52-1.56-.93-.83-1.56-1.86-1.74-2.17-.18-.31-.02-.48.14-.64.14-.14.31-.36.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.7-.97-2.33-.26-.61-.52-.53-.71-.54-.18-.01-.39-.01-.6-.01-.21 0-.55.08-.84.39-.29.31-1.1 1.07-1.1 2.61s1.12 3.03 1.28 3.24c.16.21 2.2 3.37 5.34 4.72.75.32 1.33.52 1.78.66.75.24 1.43.21 1.97.13.6-.09 1.85-.76 2.11-1.49.26-.73.26-1.35.18-1.49-.08-.13-.29-.21-.6-.36z" fill="#FFFFFF"/>
-                      </svg>
-                    </span>
-                    <span class="faq-link-label">מענה ישיר בוואטסאפ (זמינות מיידית)</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-
+            <ol class="hw-list">
+            <li class="hw-row is-active">
+              <button type="button" class="hw-btn" aria-expanded="true" aria-controls="hw-p1" data-i="0">
+                <span class="hw-num">01</span>
+                <span class="hw-title">שיחה</span>
+                <span class="hw-plus"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span>
+              </button>
+              <div class="hw-panel" id="hw-p1"><div><p>מה רוצים לשפץ, מתי ובאיזה תקציב. בסוף השיחה קובעים סיור.</p></div></div>
+            </li>
+            <li class="hw-row">
+              <button type="button" class="hw-btn" aria-expanded="false" aria-controls="hw-p2" data-i="1">
+                <span class="hw-num">02</span>
+                <span class="hw-title">סיור ומדידה</span>
+                <span class="hw-plus"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span>
+              </button>
+              <div class="hw-panel" id="hw-p2"><div><p>מגיעים לנכס, מודדים ובודקים צנרת, חשמל ואיטום. בלי התחייבות.</p></div></div>
+            </li>
+            <li class="hw-row">
+              <button type="button" class="hw-btn" aria-expanded="false" aria-controls="hw-p3" data-i="2">
+                <span class="hw-num">03</span>
+                <span class="hw-title">הצעה וחוזה</span>
+                <span class="hw-plus"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span>
+              </button>
+              <div class="hw-panel" id="hw-p3"><div><p>הצעה מפורטת לפי סעיפים, מחיר סגור ותאריך מסירה כתוב בחוזה.</p></div></div>
+            </li>
+            <li class="hw-row">
+              <button type="button" class="hw-btn" aria-expanded="false" aria-controls="hw-p4" data-i="3">
+                <span class="hw-num">04</span>
+                <span class="hw-title">ביצוע</span>
+                <span class="hw-plus"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span>
+              </button>
+              <div class="hw-panel" id="hw-p4"><div><p>מנהל עבודה באתר כל יום, ועדכון עם תמונות בסוף כל יום עבודה.</p></div></div>
+            </li>
+            <li class="hw-row">
+              <button type="button" class="hw-btn" aria-expanded="false" aria-controls="hw-p5" data-i="4">
+                <span class="hw-num">05</span>
+                <span class="hw-title">מסירה</span>
+                <span class="hw-plus"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span>
+              </button>
+              <div class="hw-panel" id="hw-p5"><div><p>בדיקה משותפת, ניקיון יסודי ואחריות בכתב על העבודה.</p></div></div>
+            </li>
+          </ol>
           </div>
-
+        </div>
+        <div class="how-foot">
+          <ul class="how-promise"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>תאריך מסירה בחוזה</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>מחיר סגור</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>חומרים בתו תקן</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>עדכון יומי</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>אחריות בכתב</span></li></ul>
+          <a href="#contact" class="btn btn-pill btn-solid">לתיאום סיור <span class="arrow" aria-hidden="true">←</span></a>
         </div>
       </div>
     </section>
 
-    <!-- Articles / Guides Section -->
-    <!-- Contact Form Section -->
-    <section class="contact-section" id="contact">
-      <div class="contact-container">
-        <div class="contact-info">
-          <span class="section-badge badge-reveal">צרו קשר</span>
-          <h2 class="text-reveal-mask">בואו נדבר על השיפוץ שלכם</h2>
-          <p>
-            מתכננים לשפץ את הדירה או הבית? השאירו פרטים ונחזור אליכם בהקדם לתיאום פגישת ייעוץ והערכת עלויות ללא כל התחייבות.
-          </p>
-
-          <div class="contact-details stagger-container">
-            <a href="tel:0548438856" class="contact-detail-row stagger-item">
-              <span class="contact-detail-icon icon-phone" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-2.2 2.2a15.05 15.05 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 3.93c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.55c0-.55-.45-1-.99-1z" fill="#16A34A"/>
-                </svg>
-              </span>
-              <span>054-8438856</span>
-            </a>
-            <a href="https://wa.me/972548438856?text=%D7%A9%D7%9param%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%93%D7%A8%D7%9A%20%D7%94%D7%90%D7%AA%D7%A8%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%AA%D7%90%D7%9D%20%D7%A4%D7%92%D7%99%D7%A9%D7%AA%20%D7%99%D7%99%D7%A2%D7%95%D7%A5%20%D7%95%D7%94%D7%A6%D7%A2%D7%AA%20%D7%9E%D7%97%D7%99%D7%A8%20%D7%9C%D7%A9%D7%99%D7%A4%D7%95%D7%A5" class="contact-detail-row stagger-item" target="_blank" rel="noopener">
-              <span class="contact-detail-icon icon-whatsapp" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M16 2C8.268 2 2 8.268 2 16c0 2.585.698 5.01 1.916 7.106L2.062 29.24a.8.8 0 0 0 .977.977l6.237-1.871A13.93 13.93 0 0 0 16 30c7.732 0 14-6.268 14-14S23.732 2 16 2z" fill="#25D366"/>
-                  <path d="M23.23 19.34c-.31-.16-1.85-.91-2.14-1.02-.29-.1-.5-.16-.71.16-.21.31-.81 1.02-.99 1.23-.18.21-.37.23-.68.08-.31-.16-1.32-.49-2.52-1.56-.93-.83-1.56-1.86-1.74-2.17-.18-.31-.02-.48.14-.64.14-.14.31-.36.47-.55.16-.18.21-.31.31-.52.1-.21.05-.39-.03-.55-.08-.16-.71-1.7-.97-2.33-.26-.61-.52-.53-.71-.54-.18-.01-.39-.01-.6-.01-.21 0-.55.08-.84.39-.29.31-1.1 1.07-1.1 2.61s1.12 3.03 1.28 3.24c.16.21 2.2 3.37 5.34 4.72.75.32 1.33.52 1.78.66.75.24 1.43.21 1.97.13.6-.09 1.85-.76 2.11-1.49.26-.73.26-1.35.18-1.49-.08-.13-.29-.21-.6-.36z" fill="#FFFFFF"/>
-                </svg>
-              </span>
-              <span>הודעה ישירה בוואטסאפ (זמינות מיידית)</span>
-            </a>
-            <div class="contact-detail-row stagger-item">
-              <span class="contact-detail-icon icon-location" aria-hidden="true">
-                <svg width="22" height="24" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M12 0C5.373 0 0 5.373 0 12c0 8.5 10.8 13.5 11.28 13.72a1.6 1.6 0 0 0 1.44 0C13.2 25.5 24 20.5 24 12c0-6.627-5.373-12-12-12z" fill="#EA4335"/>
-                  <ellipse cx="12" cy="11" rx="4.5" ry="4.5" fill="#B31412" opacity="0.15"/>
-                  <circle cx="12" cy="10.5" r="4.2" fill="#FFFFFF"/>
-                </svg>
-              </span>
-              <span>שירות מקצועי בכל אזור המרכז, השפלה וירושלים</span>
+    <section class="faq" id="faq">
+      <div class="wrap fq-grid">
+        <aside class="fq-side">
+          <h2 class="h2"><span class="text-reveal-mask">שאלות</span><span class="text-reveal-mask"><b>שחוזרות אלינו.</b></span></h2>
+          <div class="fq-card fq2">
+            <div class="fq2-media">
+              <img src="assets/images/project-after.webp" alt="" width="1200" height="816" loading="lazy">
+              <div class="fq2-over"><h3>עדיין יש שאלות?</h3><p>דברו איתנו ישירות, בלי טפסים.</p></div>
             </div>
-            <div class="contact-detail-row stagger-item">
-              <span class="contact-detail-icon icon-clock" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm1 5a1 1 0 1 0-2 0v5a1 1 0 0 0 .5.866l3.5 2.02a1 1 0 0 0 1-1.732L13 11.634V7z" fill="#1A73E8"/>
-                </svg>
-              </span>
-              <span>ימים א'-ה': 08:00 - 19:00 | ימי ו': 08:00 - 13:00</span>
+            <div class="fq2-actions">
+              <a href="tel:0548438856" class="fq2-btn fq2-btn-dark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.5h3l1.5 4-2 1.3a11 11 0 0 0 6.1 6.1l1.3-2 4 1.5v3A2 2 0 0 1 18.3 19.5 15.5 15.5 0 0 1 4.5 5.7 2 2 0 0 1 6.6 3.5z"/></svg><span><small>שיחה</small><b dir="ltr">054-8438856</b></span></a>
+              <a href="https://wa.me/972548438856?text=%D7%A9%D7%9C%D7%95%D7%9D%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%93%D7%A8%D7%9A%20%D7%94%D7%90%D7%AA%D7%A8%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A7%D7%91%D7%9C%20%D7%94%D7%A6%D7%A2%D7%AA%20%D7%9E%D7%97%D7%99%D7%A8%20%D7%9C%D7%A9%D7%99%D7%A4%D7%95%D7%A5" target="_blank" rel="noopener" class="fq2-btn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5l1.2-3.6A8 8 0 1 1 8.4 19z"/></svg><span><small>הודעה</small><b>וואטסאפ</b></span></a>
+            </div>
+            <p class="fq2-hours">זמינים א׳–ה׳ <bdi>08:00–19:00</bdi> · ו׳ <bdi>08:00–13:00</bdi></p>
+          </div>
+        </aside>
+        <div class="fq-list stagger-container">
+          <details class="fq-item stagger-item" open>
+            <summary><h3>כמה זמן לוקח שיפוץ דירה?</h3><span class="fq-icon" aria-hidden="true"></span></summary>
+            <div class="fq-body"><p>שיפוץ דירה קומפלט, הריסה, תשתיות, בינוי, איטום, ריצוף וגמר, נמשך בדרך כלל 4 עד 8 שבועות. חדר רחצה או מטבח לבד נמשכים 7 עד 14 ימי עבודה. לפני שמתחילים נקבע לוח זמנים שבועי ונתחייב אליו.</p></div>
+          </details>
+          <details class="fq-item stagger-item">
+            <summary><h3>איך נקבעת העלות, ואיך נמנעות חריגות?</h3><span class="fq-icon" aria-hidden="true"></span></summary>
+            <div class="fq-body"><p>המחיר מבוסס על כתב כמויות ומדידה בנכס. ההצעה סגורה וכוללת את כל העבודות וחומרי התשתית. שינוי או תוספת במהלך העבודה מתומחרים ומאושרים איתכם בכתב מראש.</p></div>
+          </details>
+          <details class="fq-item stagger-item">
+            <summary><h3>אפשר לשפץ חדר אחד בלבד?</h3><span class="fq-icon" aria-hidden="true"></span></summary>
+            <div class="fq-body"><p>כן. חדר רחצה, מטבח, ריצוף, צבע או גבס, גם כעבודה נקודתית. אזור העבודה מבודד ושאר הבית מוגן.</p></div>
+          </details>
+          <details class="fq-item stagger-item">
+            <summary><h3>מי מספק את החומרים?</h3><span class="fq-icon" aria-hidden="true"></span></summary>
+            <div class="fq-body"><p>אנחנו מספקים את חומרי התשתית: מלט, בלוקים, גבס, צנרת, חומרי איטום, דבקים ורובה. את חומרי הגמר, ריצוף, חיפוי, כלים סניטריים ותאורה, אתם בוחרים, ואנחנו עוזרים לבדוק כמויות והתאמה.</p></div>
+          </details>
+          <details class="fq-item stagger-item">
+            <summary><h3>מתי מקבלים הצעת מחיר מדויקת?</h3><span class="fq-icon" aria-hidden="true"></span></summary>
+            <div class="fq-body"><p>אחרי סיור בנכס: בודקים את מצב התשתיות, מבינים מה אתם רוצים ומודדים. אחריו תקבלו הצעה מפורטת, בלי התחייבות.</p></div>
+          </details>
+          <details class="fq-item stagger-item">
+            <summary><h3>אפשר לעבוד לפי תקציב שקבענו מראש?</h3><span class="fq-icon" aria-hidden="true"></span></summary>
+            <div class="fq-body"><p>כן. בפגישה הראשונה נקבע סדרי עדיפויות ונמליץ על שיטות ביצוע וחומרים שמביאים את התוצאה הטובה ביותר בתוך המסגרת שלכם.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Outro: the reverse of the hero, an arch opens to fill the screen -->
+    <section class="outro" aria-label="הבית הבא">
+      <div class="outro-stage">
+        <h2 class="outro-head"><span>הבית הבא</span> <b>שלכם.</b></h2>
+        <div class="outro-media">
+          <img src="assets/images/project-after.webp" alt="סלון ומטבח פתוחים בדירה משופצת" width="1200" height="816" loading="lazy">
+          <div class="outro-shade"></div>
+        </div>
+        <div class="outro-center">
+          <div class="outro-copy">
+            <p class="outro-line">מתחילים <b>בסיור בנכס.</b></p>
+            <p class="outro-sub">מגיעים, מודדים ונותנים מחיר סגור. בלי התחייבות.</p>
+            <div class="outro-ctas">
+              <a href="#contact" class="btn btn-pill btn-light">לתיאום סיור <span class="arrow" aria-hidden="true">←</span></a>
+              <a href="tel:0548438856" class="btn btn-pill btn-ghost-light" dir="ltr">054-8438856</a>
             </div>
           </div>
+          <ul class="outro-facts">
+            <li><b dir="ltr">4–8</b><span>שבועות לדירה קומפלט</span></li>
+            <li><b>מחיר סגור</b><span>כתוב בחוזה</span></li>
+            <li><b>אחריות</b><span>בכתב על העבודה</span></li>
+          </ul>
         </div>
+      </div>
+    </section>
 
-        <div>
-          <form class="contact-form img-reveal-editorial" id="renovationContactForm">
-            <div class="form-group">
+    <section class="ct6" id="contact">
+      <div class="ct6-bg" aria-hidden="true"><img src="assets/images/project-kitchen.webp" alt="" width="1200" height="795" loading="lazy"></div>
+      <span class="ct6-notch" aria-hidden="true"><span>מתחילים כאן</span></span>
+      <div class="wrap ct6-grid">
+        <div class="ct6-main">
+          <h2 class="ct6-title"><span>לסיור והצעת מחיר</span> <span>ללא התחייבות</span></h2>
+          <p class="ct6-sub">השאירו פרטים ונחזור אליכם בהקדם</p>
+          <form class="ct6-form" id="contactForm" novalidate>
+            <div class="bf">
               <label for="fullName">שם מלא *</label>
-              <input type="text" id="fullName" class="form-input" placeholder="ישראל ישראלי" required>
+              <input type="text" id="fullName" name="name" autocomplete="name" placeholder=" " required>
+              <p class="field-error" id="fullName-error" hidden>נא למלא שם.</p>
             </div>
-
-            <div class="form-group">
-              <label for="phone">טלפון ליצירת קשר *</label>
-              <input type="tel" id="phone" class="form-input" placeholder="050-0000000" required>
+            <div class="bf">
+              <label for="phone">טלפון *</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" dir="ltr" placeholder=" " required>
+              <p class="field-error" id="phone-error" hidden>נא למלא מספר טלפון של 9–10 ספרות.</p>
             </div>
-
-            <div class="form-group">
-              <label for="projectType">סוג השיפוץ המבוקש</label>
-              <select id="projectType" class="form-select">
-                <option value="שיפוץ דירה קומפלט">שיפוץ דירה קומפלט</option>
-                <option value="שיפוץ חדר רחצה ומקלחת">שיפוץ חדר רחצה / מקלחת</option>
-                <option value="שיפוץ מטבח">שיפוץ ושדרוג מטבח</option>
-                <option value="שיפוץ בית פרטי">שיפוץ בית פרטי / צמוד קרקע</option>
-                <option value="עבודות גמר, ריצוף וגבס">עבודות גמר, ריצוף וגבס</option>
-                <option value="שיפוץ לפני כניסה">שיפוץ לפני כניסה לדירה</option>
-                <option value="אחר">אחר (פרטו בהערות)</option>
-              </select>
+            <div class="ct6-row">
+              <div class="bf">
+                <label for="city">עיר</label>
+                <input type="text" id="city" name="city" autocomplete="address-level2" placeholder=" ">
+              </div>
+              <div class="bf bf-select">
+                <label for="type" class="sr-only">סוג העבודה</label>
+                <select id="type" name="type">
+                  <option value="" selected>סוג העבודה</option>
+                  <option value="שיפוץ דירה קומפלט">שיפוץ דירה קומפלט</option>
+                  <option value="חדר רחצה">חדר רחצה</option>
+                  <option value="מטבח">מטבח</option>
+                  <option value="בית פרטי">בית פרטי</option>
+                  <option value="ריצוף, גבס או צבע">ריצוף, גבס או צבע</option>
+                  <option value="אחר">אחר</option>
+                </select>
+                <span class="bf-caret" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></span>
+              </div>
             </div>
-
-            <div class="form-group">
-              <label for="projectNotes">ספרו לנו בקצרה על הפרויקט</label>
-              <textarea id="projectNotes" class="form-textarea" placeholder="מיקום הנכס, גודל משוער, תאריך כניסה מבוקש..."></textarea>
+            <div class="bf">
+              <label for="notes">הודעה</label>
+              <textarea id="notes" name="notes" rows="1" placeholder=" "></textarea>
             </div>
-
-            <button type="submit" class="form-submit-btn">לקבלת הצעת מחיר לשיפוץ ←</button>
-
-            <div class="form-success-msg" id="formSuccessMessage">
-              ✓ תודה! פנייתך התקבלה בהצלחה. ניצור איתך קשר בהקדם לתיאום פגישה.
-            </div>
+            <p class="ct6-fine">הפרטים נפתחים אצלכם בוואטסאפ, ונשלחים רק כשתלחצו "שליחה".</p>
+            <button type="submit" class="ct6-submit">אני רוצה לתאם סיור</button>
+            <p class="form-note" id="formNote" role="status"></p>
           </form>
         </div>
+
+        <aside class="ct6-side">
+          <a href="index.html" class="brand ct6-brand" aria-label="ארזים, דף הבית"><span class="logo-word">ארזים</span><span class="logo-rule" aria-hidden="true"></span><span class="logo-sub">שיפוצים<br>ועבודות גמר</span></a>
+          <ul class="ct6-contact">
+            <li><a href="tel:0548438856"><span class="ct6-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.5h3l1.5 4-2 1.3a11 11 0 0 0 6.1 6.1l1.3-2 4 1.5v3A2 2 0 0 1 18.3 19.5 15.5 15.5 0 0 1 4.5 5.7 2 2 0 0 1 6.6 3.5z"/></svg></span><span><b>טלפון:</b> <span class="roll-num" dir="ltr">054-8438856</span></span></a></li>
+            <li><a href="https://wa.me/972548438856?text=%D7%A9%D7%9C%D7%95%D7%9D%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%93%D7%A8%D7%9A%20%D7%94%D7%90%D7%AA%D7%A8%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A7%D7%91%D7%9C%20%D7%94%D7%A6%D7%A2%D7%AA%20%D7%9E%D7%97%D7%99%D7%A8%20%D7%9C%D7%A9%D7%99%D7%A4%D7%95%D7%A5" target="_blank" rel="noopener"><span class="ct6-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5l1.2-3.6A8 8 0 1 1 8.4 19z"/></svg></span><span><b>וואטסאפ:</b> שלחו הודעה</span></a></li>
+            <li><span class="ct6-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span><span><b>שעות:</b> א׳–ה׳ <bdi>08:00–19:00</bdi> · ו׳ <bdi>08:00–13:00</bdi></span></li>
+            <li><span class="ct6-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg></span><span><b>אזורים:</b> מרכז, שפלה וירושלים</span></li>
+          </ul>
+        </aside>
       </div>
     </section>
   </main>
 
-  <!-- Floating WhatsApp Action -->
-  <a href="https://wa.me/972548438856?text=%D7%A9%D7%9param%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%93%D7%A8%D7%9A%20%D7%94%D7%90%D7%AA%D7%A8%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%AA%D7%90%D7%9D%20%D7%A4%D7%92%D7%99%D7%A9%D7%AA%20%D7%99%D7%99%D7%A2%D7%95%D7%A5%20%D7%95%D7%94%D7%A6%D7%A2%D7%AA%20%D7%9E%D7%97%D7%99%D7%A8%20%D7%9C%D7%A9%D7%99%D7%A4%D7%95%D7%A5" class="whatsapp-float" target="_blank" rel="noopener" aria-label="צ'אט וואטסאפ מהיר עם קבלן השיפוצים">
-    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.044c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824zm-3.423-10.416c-5.502 0-9.97 4.468-9.97 9.97 0 1.768.461 3.488 1.339 5.006l-1.42 5.188 5.342-1.401c1.464.801 3.125 1.228 4.709 1.228 5.503 0 9.972-4.469 9.972-9.971 0-5.502-4.469-9.97-9.972-9.97z"/>
-    </svg>
-  </a>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="footer-container stagger-container">
-      <div class="footer-col stagger-item">
-        <img src="assets/images/logo-white.svg" alt="ארזים שיפוצים" width="220" height="50" style="margin-bottom: 20px;">
-        <p style="color: #B5AB9E; line-height: 1.7; font-size: 15px; max-width: 380px;">
-          ארזים שיפוצים ועבודות גמר — מתמחים בשיפוץ דירות יוקרה, בתים פרטיים וחדרי רחצה בסטנדרט ביצוע מחמיר, תכנון מוקפד ועמידה מלאה בלוח הזמנים.
-        </p>
+  <footer class="site-footer ft2">
+    <div class="wrap">
+      <div class="ft2-top">
+        <a href="index.html" class="brand brand-lg" aria-label="ארזים, דף הבית"><span class="logo-word">ארזים</span><span class="logo-rule" aria-hidden="true"></span><span class="logo-sub">שיפוצים<br>ועבודות גמר</span></a>
+        <p class="ft2-line">מנהל עבודה אחד, מחיר סגור<br>ואחריות בכתב.</p>
+        <div class="ft2-cta">
+          <a href="contact.html" class="ft2-btn">לתיאום סיור <span aria-hidden="true">←</span></a>
+          <a href="tel:0548438856" class="ft2-phone" dir="ltr">054-8438856</a>
+        </div>
       </div>
 
-      <div class="footer-col stagger-item">
-        <h4>ניווט מהיר</h4>
-        <ul class="footer-links">
-          <li><a href="#hero">דף הבית</a></li>
-          <li><a href="#about">אודות החברה</a></li>
-          <li><a href="#services">שירותי שיפוצים</a></li>
-          <li><a href="#gallery">תיק עבודות</a></li>
-          <li><a href="#process">תהליך העבודה</a></li>
-          <li><a href="#why-us">למה לבחור בנו</a></li>
-          <li><a href="#faq">שאלות נפוצות</a></li>
-        </ul>
+      <div class="ft2-grid">
+        <nav class="ft2-col" aria-label="ניווט בתחתית העמוד">
+          <h4>האתר</h4>
+          <ul>
+            <li><a href="index.html">דף הבית</a></li>
+            <li><a href="about.html">אודות</a></li>
+            <li><a href="services.html">שירותים</a></li>
+            <li><a href="projects.html">פרויקטים</a></li>
+            <li><a href="contact.html">צור קשר</a></li>
+          </ul>
+        </nav>
+        <div class="ft2-col">
+          <h4>שירותים</h4>
+          <ul>
+            <li><a href="services.html#svc-01">שיפוץ דירה קומפלט</a></li>
+            <li><a href="services.html#svc-02">חדרי רחצה</a></li>
+            <li><a href="services.html#svc-03">מטבחים</a></li>
+            <li><a href="services.html#svc-04">גבס והנמכות</a></li>
+            <li><a href="services.html#svc-05">ריצוף וחיפוי</a></li>
+          </ul>
+        </div>
+        <div class="ft2-col">
+          <h4>שעות פעילות</h4>
+          <ul class="ft2-plain">
+            <li><span>א׳–ה׳</span><bdi>08:00–19:00</bdi></li>
+            <li><span>ו׳</span><bdi>08:00–13:00</bdi></li>
+            <li><span>שבת</span><span>סגור</span></li>
+          </ul>
+        </div>
+        <div class="ft2-col">
+          <h4>דברו איתנו</h4>
+          <ul>
+            <li><a href="tel:0548438856" dir="ltr">054-8438856</a></li>
+            <li><a href="https://wa.me/972548438856?text=%D7%A9%D7%9C%D7%95%D7%9D%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%93%D7%A8%D7%9A%20%D7%94%D7%90%D7%AA%D7%A8%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A7%D7%91%D7%9C%20%D7%94%D7%A6%D7%A2%D7%AA%20%D7%9E%D7%97%D7%99%D7%A8%20%D7%9C%D7%A9%D7%99%D7%A4%D7%95%D7%A5" target="_blank" rel="noopener">וואטסאפ <span aria-hidden="true">←</span></a></li>
+            <li class="ft2-muted">מרכז, שפלה וירושלים</li>
+          </ul>
+        </div>
       </div>
 
-      <div class="footer-col stagger-item">
-        <h4>שירותים מובילים</h4>
-        <ul class="footer-links">
-          <li><a href="#services">שיפוץ דירות קומפלט</a></li>
-          <li><a href="#services">שיפוץ חדרי אמבטיה</a></li>
-          <li><a href="#services">שיפוץ מטבחים</a></li>
-          <li><a href="#services">עבודות גבס ותאורה</a></li>
-          <li><a href="#services">עבודות ריצוף וחיפוי</a></li>
-          <li><a href="#services">אינסטלציה וחשמל</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col stagger-item">
-        <h4>יצירת קשר</h4>
-        <ul class="footer-links">
-          <li><a href="tel:0548438856">טלפון: 054-8438856</a></li>
-          <li><a href="https://wa.me/972548438856" target="_blank" rel="noopener">וואטסאפ ישיר</a></li>
-          <li><span style="color: #B5AB9E;">אזור פעילות: מרכז, שפלה וירושלים</span></li>
-          <li><span style="color: #B5AB9E;">מענה בימים א'-ה' 08:00-19:00</span></li>
-        </ul>
+      <div class="ft2-bottom">
+        <span>© 2026 ארזים, שיפוצים ועבודות גמר</span>
+        <a href="accessibility.html">הצהרת נגישות</a>
+        <a href="#main" class="ft2-top-btn">חזרה למעלה <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></a>
       </div>
     </div>
-
-    <div class="footer-bottom">
-      <div>כל הזכויות שמורות 2026 © ארזים — שיפוצים ועבודות גמר</div>
-      <div>מקצועיות • אמינות • שקיפות</div>
-    </div>
-
-    <div class="creators-credit" dir="ltr">
-      Website created by <a href="https://wa.me/972584462009?text=%D7%94%D7%99%D7%99%20%D7%A8%D7%95%D7%A0%D7%99%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%93%D7%A8%D7%9A%20%D7%94%D7%90%D7%AA%D7%A8%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%93%D7%91%D7%A8%20%D7%90%D7%99%D7%AA%D7%9A%20%D7%A2%D7%9C%20%D7%91%D7%A0%D7%99%D7%99%D7%AA%20%D7%90%D7%AA%D7%A8." target="_blank" rel="noopener" class="creator-link">Roni Levi</a> &amp; <a href="https://wa.me/972585620507?text=%D7%94%D7%99%D7%99%20%D7%A0%D7%95%D7%A2%D7%9D%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%93%D7%A8%D7%9A%20%D7%94%D7%90%D7%AA%D7%A8%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%93%D7%91%D7%A8%20%D7%90%D7%99%D7%AA%D7%9A%20%D7%A2%D7%9C%20%D7%91%D7%A0%D7%99%D7%99%D7%AA%20%D7%90%D7%AA%D7%A8." target="_blank" rel="noopener" class="creator-link">Noam Sasonker</a>
+    <div class="ft2-credit ft3-credit">
+      <div class="wrap"><span dir="ltr">Website by <a href="https://wa.me/972584462009" target="_blank" rel="noopener">Roni Levi</a> &amp; <a href="https://wa.me/972585620507" target="_blank" rel="noopener">Noam Sasonker</a></span></div>
     </div>
   </footer>
 
-  <!-- Scripts -->
-  <script src="assets/js/gsap.min.js"></script>
-  <script src="assets/js/ScrollTrigger.min.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/cinematic-animations.js"></script>
+  <script src="assets/js/gsap.min.js" defer></script>
+  <script src="assets/js/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="assets/js/site.js" defer></script>
 </body>
 </html>

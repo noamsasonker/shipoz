@@ -2,7 +2,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const PORT = process.env.PORT || 3000;
+const PORT = Number(process.env.PORT) || 3000;
 
 const MIME_TYPES = {
   '.html': 'text/html; charset=UTF-8',
@@ -40,6 +40,25 @@ const server = http.createServer((req, res) => {
   });
 });
 
-server.listen(PORT, () => {
-  console.log(`Server running at http://localhost:${PORT}/`);
-});
+function startServer(port) {
+  const onListening = () => {
+    server.removeListener('error', onError);
+    console.log(`Server running at http://localhost:${port}/`);
+  };
+
+  const onError = (err) => {
+    server.removeListener('listening', onListening);
+    if (err.code === 'EADDRINUSE') {
+      console.log(`Port ${port} is in use, trying port ${port + 1}...`);
+      startServer(port + 1);
+    } else {
+      console.error('Server error:', err);
+    }
+  };
+
+  server.once('listening', onListening);
+  server.once('error', onError);
+  server.listen(port);
+}
+
+startServer(PORT);
